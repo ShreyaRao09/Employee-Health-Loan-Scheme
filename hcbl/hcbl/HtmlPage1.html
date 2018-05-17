@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href=StyleSheet2.css" rel="stylesheet" type="text/css" />
+    <style>
+
+
+        body
+{
+display:block;
+margin:8px;
+}
+
+
+.nvbar ul{
+list-style: none;
+margin:119px;
+padding:2px;
+}
+
+.nvbar li{
+float:left;
+width:24%;
+text-align:center;
+background-color:gray;
+border-right:10px solid white;
+position:relative;
+}
+
+.nvbar li ul{
+position:absolute;
+top:-100px;
+}
+
+.nvbar li ul li{
+float:none;
+width:120%;
+text-align:left;
+padding-left:4px;
+}
+
+.nvbar a{
+font-family:"Meiryo UI",Verdana,sans-serif;
+color:black;
+text-decoration:none;
+display:block;
+}
+
+.arrow1{
+width:0;
+height:0;
+border-left: 12px solid transparent;
+border-right: 12px solid transparent;
+border-bottom: 12px solid gray;
+position:relative;
+right:-70%;
+}
+
+.sub1{
+visibility:hidden;
+}
+
+.loglist:hover .sub1{
+visibility:visible;
+}
+
+.nvbar li:hover{
+background-color:crimson;
+}
+        </style>
+</head>
+<body>
+<form id="form1" runst="server">
+   <div class="nvbar">
+   <ul>
+        <li><a href="#">HOME</a></li>
+		<li><a href="#">ABOUTUS</a></li>
+		<li class="loglist"><a href="#">LOGIN</a>
+          <div class="sub1">
+   <ul>
+        <div class="arrow1"></div>
+		<li><a href="~/wf1.aspx">HOSPITAL</a></li>
+		<li><a href="#">EMPLOYEE</a></li>
+		<li><a href="#">US</a></li>
+   </ul></div>
+   </li>
+   <li><a href="#">REGISTER</a></li>
+    </ul>
+	</div>
+	</form>
+</body>
+</html>
